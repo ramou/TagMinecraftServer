@@ -30,7 +30,7 @@
 </ul>
 
 <h2>INSTALLATION INSTRUCTIONS</h2>
-<h3>Download and setup the MultiMC software</h3>
+<h3>IF YOU HAVE A MOJANG ACCOUNT - Download and setup the MultiMC software</h3>
 <ol>
 <li>Download MultiMC, a Minecraft client wrapper that will make it easy for you to manage your mods across different Minecraft versions. <a href="https://multimc.org/#Download">https://multimc.org/#Download</a></li>
 <li>Extract the MultiMC folder from the zip (Windows), tarred gzip (Mac) or other file (Linux) to a place of your choice on your hard drive. The program does not have to be installed anywhere in particular, just unzipped.</li>
@@ -40,15 +40,25 @@
 <img src="images/MultiMCQuickSetup.png"/>
 <li>The final setup prompt will ask if you wish to allow MultiMC to collect anonymous usage statistics. This is entirely your choice. If you do not want MultiMC to collect any information about your system, make sure to uncheck the box before proceeding.</li>
 <li>Enter your Minecraft login credentials in MultiMC. Click the "Profiles" button in the upper-right corner and select "Manage accounts" from the menu. In the popup window, click the "Add" button on the right-hand side. Enter your Mojang username and password at the prompt.</li> 
+	<li>Proceed to the instance/modpack download, below.</li>	
+</ol>
+<h3>IF YOU HAVE A MICROSOFT ACCOUNT - Download and setup the CurseForge Launcher software</h3>
+<ol>
+<li>Download CurseForge, a Minecraft client wrapper that will make it easy-ish for you to manage your mods across different Minecraft versions. <a href="https://curseforge.overwolf.com/">https://multimc.org/#Download</a></li>
+<li>NOTE: You do NOT need a separate CurseForge/Overwolf account to use this program.</li>
+<li>Download and run the installer to install the program, then launch it.</li>
+<li>On the "Choose a game" screen, select "Minecraft."</li>
+	<li>Proceed to the instance/modpack download, below.</li>
 </ol>
 
-<h3>Download the Imagine No Dragons client instance</h3>
+
+<h3>Download the Interlude client instance</h3>
 <p>Download the ZIP file, and save it anywhere on your hard drive.<br/> 
 Do not unpack it!<br/>
 <a href="InterludeV2.5.zip">Interlude V2.5</a></p>
 
 
-<h3>Install the instance in MultiMC.</h3>
+<h3>(MOJANG ACCOUNTS ONLY) Install the instance in MultiMC.</h3>
 
 <p>Click the "Add Instance" button in the upper left-hand corner of the window.</p> 
 <img src="images/AddInstance.png"/>
@@ -61,6 +71,24 @@ Do not unpack it!<br/>
 	<li>Get the right verrsion: <a href="https://javadl.oracle.com/webapps/download/GetFile/1.8.0_251-b08/3d5a2bb8f8d4428bbe94aed7ec7ae784/unix-i586/jdk-8u251-macosx-x64.dmg">1.8.0_251</a></li>
 	<li>Once that is installed, you'll need to right click and "Edit Instance" the Interlude instance, go to "Settings" tab, check "Java Installation", click Autodetect, and choose version 251 from the list.</li>
 </ol>
+
+	<h3>(MICROSOFT ACCOUNTS) Install the instance in CurseForge Launcher.</h3>
+	<li>Click the "Create Custom Profile" button.</li>
+	<li>Fill out any old name you like in the Name field.</li>
+	<li>Make sure you have Minecraft 1.16.5 and Forge 36.1.4 selected. Click Create and wait for some files to be downloaded</li>
+	<li>Right-click on your newly created profile and choose "Open Folder"</li>
+	<li>Now open the modpack zip in your favourite zip-file manager, go into the "minecraft" subfolder, and drag "servers.dat" and the "mods" folder into the Overwolf profile folder you just opened.</li>
+	<li>Back in the CurseForge Launcher, click Play on your profile.</li>
+	<li>After a few moments, the familiar vanilla Minecraft launcher should appear (this is a self-contained version created by the Curse app to manage installation profiles automatically for you).</li>
+	<li>You will be prompted to log into your Microsoft account.</li>
+	<li>Once in, click the "Installations" tab, and you should see the modpack there. Mouse over the list item, click the three-dots button, and select "Edit"</li>
+	<li>Click "More Options" and scroll down to "JVM Arguments."</li>
+	<li>Without changing any other part of this text, look for these two strings: "-Xmx4096m" and "-Xms2056m"</li>
+	<li>If you can spare at least 6 GB of dedodated wam, change "-Xmx4096m" to "-Xmx6114m" -- even better, 8GB with "-Xmx8192m"</li>
+	<li>Change "-Xms256m" to "-Xms2048m"</li>
+	<li>Click save to go back to the Installations menu, then click Play</li>
+	<li>Proceed to "Connecting to the server" below.</li>
+	
 
 <h3>Running the game</h3>
 <p>Double click on the instance, wait, this might take a while.</p>  
